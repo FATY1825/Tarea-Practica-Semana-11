@@ -1,6 +1,7 @@
 #import PIL
 from distutils.cmd import Command
 from email import message
+import tkinter
 from PIL import Image, ImageTk
 from cProfile import label
 from PIL import Image, ImageFilter
@@ -87,6 +88,10 @@ btn6 =Button(ventana, text="RESALTAR IMAGEN", command=Resaltar)
 btn6.configure(bg="thistle")
 btn6.place(x=425, y=245)
 
-
+#Hacemos un label para nuestros nombres
+mair = tkinter.Label(ventana, text = "Maira Liseth Ramos Parada -SMIS012921")
+mair.place(x=10, y=0)
+fati = tkinter.Label(ventana, text = "Fatima del Carmen Ayala Santos -SMIS003321")
+fati.place(x=240, y=0)
 #Se llama a la ventana
 ventana.mainloop()
